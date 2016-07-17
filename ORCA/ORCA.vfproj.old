@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="9.10" ProjectIdGuid="{8F6EEC4C-EE29-475A-BC3C-26376599D3F1}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories="D:\Projects\ORCA\hdf5lib\include" Interfaces="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="D:\Projects\ORCA\hdf5lib\lib" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="hdf5.lib hdf5_fortran.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|Win32" IntermediateDirectory="$(ConfigurationName)\obj">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" AdditionalIncludeDirectories="D:\Projects\ORCA\hdf5lib\lib"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="D:\Projects\ORCA\hdf5lib\lib" SubSystem="subSystemConsole" AdditionalDependencies="hdf5.lib hdf5_fortran.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath="..\..\src\airy_hsp.f"/>
+		<File RelativePath="..\..\src\bb_brute.f"/>
+		<File RelativePath="..\..\src\bb_field.f"/>
+		<File RelativePath="..\..\src\bb_fmarch.f"/>
+		<File RelativePath="..\..\src\bb_init.f"/>
+		<File RelativePath="..\..\src\blug.f"/>
+		<File RelativePath="..\..\src\contour_find.f"/>
+		<File RelativePath="..\..\src\cw_modes.f"/>
+		<File RelativePath="..\..\src\duct_calcs.f"/>
+		<File RelativePath="..\..\src\eig_disp.f"/>
+		<File RelativePath="..\..\src\eig_findm.f"/>
+		<File RelativePath="..\..\src\eig_list.f"/>
+		<File RelativePath="..\..\src\em_calc.f"/>
+		<File RelativePath="..\..\src\env_write.f"/>
+		<File RelativePath="..\..\src\ep_calc.f"/>
+		<File RelativePath="..\..\src\fix_path.f"/>
+		<File RelativePath="..\..\src\freq_init.f"/>
+		<File RelativePath="..\..\src\gen_com.f90"/>
+		<File RelativePath="..\..\src\h_space.f"/>
+		<File RelativePath="..\..\src\hdf_write_end_dummy.f"/>
+		<File RelativePath="..\..\src\hdf_write_gen_dummy.f"/>
+		<File RelativePath="..\..\src\i_o_com.f90"/>
+		<File RelativePath="..\..\src\k_plane.f"/>
+		<File RelativePath="..\..\src\krak_out.f"/>
+		<File RelativePath="..\..\src\mfun_fill.f"/>
+		<File RelativePath="..\..\src\mode_branch.f"/>
+		<File RelativePath="..\..\src\mode_field.f"/>
+		<File RelativePath="..\..\src\mode_find.f"/>
+		<File RelativePath="..\..\src\mode_fun.f"/>
+		<File RelativePath="..\..\src\mode_ortho.f"/>
+		<File RelativePath="..\..\src\mode_traj.f"/>
+		<File RelativePath="..\..\src\opt_read.f"/>
+		<File RelativePath="..\..\src\orca.f"/>
+		<File RelativePath="..\..\src\parms_com.f90"/>
+		<File RelativePath="..\..\src\phz_calc.f"/>
+		<File RelativePath="..\..\src\pw_refco.f"/>
+		<File RelativePath="..\..\src\r1r2_calc.f"/>
+		<File RelativePath="..\..\src\rp_calc.f"/>
+		<File RelativePath="..\..\src\rp_flay.f"/>
+		<File RelativePath="..\..\src\rp_nomm.f">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" AdditionalIncludeDirectories="C:\Program Files\HDF_Group\HDF5\1.8.13\include"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" AdditionalIncludeDirectories="C:\Program Files\HDF_Group\HDF5\1.8.13\include"/></FileConfiguration></File>
+		<File RelativePath="..\..\src\rp_nomm0.f"/>
+		<File RelativePath="..\..\src\rp_sfint.f"/>
+		<File RelativePath="..\..\src\rp_slay.f"/>
+		<File RelativePath="..\..\src\rp_slay0.f"/>
+		<File RelativePath="..\..\src\rx_bb.f"/>
+		<File RelativePath="..\..\src\rx_ek_calc.f"/>
+		<File RelativePath="..\..\src\rx_mf_lay.f"/>
+		<File RelativePath="..\..\src\rx_mode_fun.f"/>
+		<File RelativePath="..\..\src\rx_mode_fun_Dw.f"/>
+		<File RelativePath="..\..\src\rx_modes.f">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" ModulePath="$(IntDir)\" ObjectFile="$(IntDir)\obj"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" ModulePath="$(IntDir)\" ObjectFile="$(IntDir)\obj"/></FileConfiguration></File>
+		<File RelativePath="..\..\src\scairy2.f"/>
+		<File RelativePath="..\..\src\scairy_com.f90"/>
+		<File RelativePath="..\..\src\sigma_fill.f"/>
+		<File RelativePath="..\..\src\sr_geom.f"/>
+		<File RelativePath="..\..\src\svp_check.f"/>
+		<File RelativePath="..\..\src\svp_read.f"/>
+		<File RelativePath="..\..\src\tools.f"/>
+		<File RelativePath="..\..\src\traj_mag.f"/>
+		<File RelativePath="..\..\src\vary_env.f"/>
+		<File RelativePath="..\..\src\vbl_init.f"/>
+		<File RelativePath="..\..\src\xi_cut_set.f"/>
+		<File RelativePath="..\..\src\xkh_init.f"/>
+		<File RelativePath="..\..\src\zmx_init.f"/></Filter></Files>
+	<Globals/></VisualStudioProject>
