@@ -1,0 +1,53 @@
+               ### SVP FILE FOR ORCA NORMAL MODE MODEL ###
+           ### ENTER DATA AFTER LINES WITH * IN FIRST COLUMN ###
+                  ### USE OTHER LINES FOR COMMENTS ###
+Note: ap,as = p-wave, s-wave attenuations (pos~db/m/kHz, neg~dB/wavelength,
+              999 ~ Thorpe attenuation in seawater)
+Note: Do not change version number in first line
+*(1) ver_no  "SVP TITLE":
+        3.0  "SWARM4L SVP"
+--------------------------------------------------------------------------
+*(2) cp      cs     rho      ap      as   fexpp   fexps   For Upper Halfspace:
+  343.0     0.0  .00121     0.0     0.0     1.0     1.0
+--------------------------------------------------------------------------
+nsvp = number of SVP points in ocean to be read on Line (4)
+ctol = tolerance used in fitting SVP to eliminate layers (0=keep all layers)
+*(3) nsvp  ctol
+       13     0
+--------------------------------------------------------------------------
+Ocean SVP Profile (add constant rho, ap in ocean on 1st line):
+*(4)    z     cp 
+0.0000       1532.8700    1.05   0         
+10.0690      1533.0100
+13.6150      1530.4500
+21.0310      1511.6500
+27.6810      1498.6200
+31.3750      1489.1700
+36.7600      1485.7000
+38.3900      1483.4700
+39.3140      1484.3800
+42.1080      1479.8400
+46.4310      1482.1300
+72.5000      1482.5600
+100.000      1482.5600
+--------------------------------------------------------------------------
+*(5) nbot (# bottom layers to be read in Line 6):
+1
+--------------------------------------------------------------------------
+Layer Profiles: type: 1=linear, 2=blug, 3=blug, 4=blug;   examples: 
+1 h  cp1 cp2  cs1 cs2  rho1 rho2  ap1 ap2  as1 as2 dummy dummy fexpp fexps
+2 h  cp1   g  cs1 cs2  rho1 rho2  ap1 ap2  as1 as2  beta ctol  fexpp fexps
+3 h  cp1 cp2  cs1 cs2  rho1 rho2  ap1 ap2  as1 as2  beta ctol  fexpp fexps
+4 h  cp1 cp2  cs1 cs2  rho1 rho2  ap1 ap2  as1 as2     g ctol  fexpp fexps
+(Layer 1 only: h<0 ==> 2-way travel time, cp1<0 ==> cp1/cw ratio)
+*(6) ii  h  cp1 cp2/g  cs1 cs2  rho1 rho2  ap1 ap2  as1 as2  b/g ctol fxp fxs
+     1  10   1560.00 1580.00 0 0 1.8 1.8  -0.1 -0.1  0  0  0  0  1  1
+--------------------------------------------------------------------------
+*(7) cp      cs     rho      ap      as   fexpp   fexps   For Lower Halfspace:
+    1900.0   0.0   2.15     -0.7    -0.0   1.0     1.0
+--------------------------------------------------------------------------
+*(8) ntop (# Top Layers to Be Read on Line 9):
+        0
+--------------------------------------------------------------------------
+*(9) ii thick  cp1 cp2/g  cs1  cs2  rho1 rho2  ap1 ap2  as1 as2  beta ctol
+

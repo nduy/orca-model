@@ -1,0 +1,23 @@
+*(1) ver_no  iicw  iikpl  iirc  iiparm  n_env  iifmt
+       2.01     1     0     0       0      0       1
+*(2) iirx cphmin cphmax rmin rmax phfac db_cut Aih_l Ah_u kkblm iigbs iidiag  
+        0      0      0    0    0     4     50     0    0     0     0      0
+*(3) nf f1 f2 ...
+      1  50 150
+*(4) iitl iimf iisig iimt iidc iikn iieig iikrak iioas iifepe iimlab
+      1    1     0    0    0    0     0       0     0      0      0
+*(5) nzs zs1 zs2 (m) ... nzr zr1 zr2 (m) ... nr r1 r2 (km) ...
+      1    25.0         -151   0  150      -401  0.001  4.0
+*(6) iir/i iim/p  nzm zm1 zm2 ...
+         3      0   -101   0  100
+*(7) fs  nfft/Tw  fmin fmax iifft iiout iift iimt iidc iimf
+      512   512    75    150   1    0     0   0    0    1
+*(8) nzs zs1 zs2 (m) ... nzr zr1 zr2 (m) ... nr r1  r2 (km) ...
+      1    25.0             1   50              1  5.0
+*(9) nrun nparm  rseed [(obt nlay ktb pc val1 val2),j=1,nparm]
+*(10) zs  n_src_seg  array_geom_file_name
+*(11) 2 iic    v     t1     t2 +dt/-nt    x1    y1    x2    y2    (X-Y FORM)
+*(12) freq iivar iikf   kr1   kr2  nkr   ki1   ki2  nki nduct iiph iishp iishs
+*(13) freq1  freq2  nfreq  iilog  theta1  theta2  ntheta
+*(14) freq1  freq2     fs  nfft  theta1  theta2  ntheta
+

@@ -1,0 +1,74 @@
+ORCA NORMAL MODE MODEL RUN: DATE = 09/12/2014; TIME = 21:54:26:**
+SVP FILE = SWARM4L_svp.dat
+OPT FILE = SWARM4L_opt.dat
+OUTPUT FILE ROOT = orca
+
+### SVP FILE INFORMATION ###
+*(1) ver_no  "SVP TITLE":
+        3.0  "SWARM4L SVP"
+*(2) cp      cs     rho      ap      as   fexpp   fexps   For Upper Halfspace:
+  343.0     0.0  .00121     0.0     0.0     1.0     1.0
+*(3) nsvp  ctol
+       13     0
+*(4)    z     cp
+0.0000       1532.8700    1.05   0
+10.0690      1533.0100
+13.6150      1530.4500
+21.0310      1511.6500
+27.6810      1498.6200
+31.3750      1489.1700
+36.7600      1485.7000
+38.3900      1483.4700
+39.3140      1484.3800
+42.1080      1479.8400
+46.4310      1482.1300
+72.5000      1482.5600
+100.000      1482.5600
+*(5) nbot (# bottom layers to be read in Line 6):
+1
+*(6) ii  h  cp1 cp2/g  cs1 cs2  rho1 rho2  ap1 ap2  as1 as2  b/g ctol fxp fxs
+     1  10   1560.00 1580.00 0 0 1.8 1.8  -0.1 -0.1  0  0  0  0  1  1
+*(7) cp      cs     rho      ap      as   fexpp   fexps   For Lower Halfspace:
+    1900.0   0.0   2.15     -0.7    -0.0   1.0     1.0
+*(8) ntop (# Top Layers to Be Read on Line 9):
+        0
+*(9) ii thick  cp1 cp2/g  cs1  cs2  rho1 rho2  ap1 ap2  as1 as2  beta ctol
+
+### OPTION FILE INFORMATION ###
+*(1) ver_no  iicw  iikpl  iirc  iiparm  n_env  iifmt
+       2.01     1     0     0       0      0       1
+*(2) iirx cphmin cphmax rmin rmax phfac db_cut Aih_l Ah_u kkblm iigbs iidiag
+        0      0      0    0    0     4     50     0    0     0     0      0
+*(3) nf f1 f2 ...
+      1  50 150
+*(4) iitl iimf iisig iimt iidc iikn iieig iikrak iioas iifepe iimlab
+      1    1     0    0    0    0     0       0     0      0      0
+*(5) nzs zs1 zs2 (m) ... nzr zr1 zr2 (m) ... nr r1 r2 (km) ...
+   1     25.000
+-151      0.000   150.000
+-401      0.001     4.000
+*(6) iir/i iim/p  nzm zm1 zm2 ...
+         3      0   -101   0  100
+*(7) fs  nfft/Tw  fmin fmax iifft iiout iift iimt iidc iimf
+*(8) nzs zs1 zs2 (m) ... nzr zr1 zr2 (m) ... nr r1  r2 (km) ...
+*(9) nrun nparm  rseed [(obt nlay ktb pc val1 val2),j=1,nparm]
+*(10) zs  n_src_seg  array_geom_file_name
+*(11) 2 iic    v     t1     t2 +dt/-nt    x1    y1    x2    y2    (X-Y FORM)
+*(12) freq iivar iikf   kr1   kr2  nkr   ki1   ki2  nki nduct iiph iishp iishs
+*(13) freq1  freq2  nfreq  iilog  theta1  theta2  ntheta
+*(14) freq1  freq2     fs  nfft  theta1  theta2  ntheta
+ Mode search stopped because of nmode*nzsr limit.
+Informative message: Finished checking duct at depth    0.00
+   # modes found in duct =   13
+ Mode search stopped because of nmode*nzsr limit.
+Informative message: Finished checking duct at depth   38.39
+   # modes found in duct =    0
+ Mode search stopped because of nmode*nzsr limit.
+Informative message: Finished checking duct at depth   42.11
+   # modes found in duct =    0
+ Mode search stopped because of nmode*nzsr limit.
+Informative message: Finished checking duct at depth  100.00
+   # modes found in duct =    0
+Time taken to find modes =    0.02
+f =    50.00; # of Modes =   13; # R1*R2 Calcs =   119
+TOTAL CP MINUTES TAKEN FOR RUN =   00:00.09
